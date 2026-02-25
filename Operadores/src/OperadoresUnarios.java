@@ -2,7 +2,7 @@ public class OperadoresUnarios {
     public static void main(String[] args) {
         //Operadores Unarios
         int a=3, b=-2, resultado = 0;
-        var c = true;
+        
 
         //Operador unario -
         resultado = -a;
@@ -28,7 +28,10 @@ public class OperadoresUnarios {
         System.out.println("Post-decremento b-- = " + resultado);
         System.out.println("b = "+ b);
 
-        //Operador unario -
+        //Operador negacion ! (invierte el valor logico)
+        var c = true;
+        var resultado2 = !c;
+        System.out.println("Negacion !c = " + resultado2);
     }
 
 }
