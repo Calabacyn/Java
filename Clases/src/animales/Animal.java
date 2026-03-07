@@ -17,21 +17,29 @@ class Perro extends  Animal{
         System.out.println("Puedo ladrar");
     }
 
+    @Override
+    public void dormir(){
+        System.out.println("Duermo 15hs horas al dia");
+        System.out.println("Metodo clase pabre: " );
+        super.dormir();
+    }
+
 }
 
 class  PruebaAnimal{
     public static void main(String[] args) {
         System.out.println("**** Ejemplo de herencia ****");
+
         System.out.println("Clase Padre, soy un animal");
         var animal1 = new Animal();
         animal1.comer();
         animal1.dormir();
 
         System.out.println("Clase Padre, soy un Perro");
-
         var perro1 = new Perro();
-        perro1.hacerSonido();
         perro1.comer();
+        perro1.dormir();
+        perro1.hacerSonido();
 
 
 
